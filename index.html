@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <title>Crud</title>
+</head>
+<body>
+
+<section class=" mt-20 w-75 mx-auto">
+  <!-- search -->
+  <div class="main-bg py-3  rounded-md px-5 d-flex"> 
+     <input type="text" class="form-control" id="search"  placeholder="Search For The Site .."> 
+    <i class="fa-solid fa-magnifying-glass m-2 ms-5 text-xl"></i>
+  </div>
+
+
+  <div class=" mt-3  main-bg d-flex py-4 px-5 rounded-md">
+       <!-- form  -->
+       <div class=" form  main-bg w-50 p-3 rounded-md ">
+        <form >
+          <div class="mb-3">
+            <label  class="form-label">Website Name </label>
+            <input type="text" class="form-control" id="Website-Name">
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">Website Link </label>
+            <input type="text" class="form-control" id="Website-Link">
+          </div>
+       
+          <button type="submit" id="addBtn" class="btn btn-success " onclick='addBookMark()'> Add BookMark</button>
+          <div class="mt-3"><p>BookMark Count: <span id="counter"></span></p></div>
+  
+        </form>
+      </div>
+    
+
+<!-- table -->
+<div class="w-50  table  main-bg w-50 p-3 rounded-md  ms-20">
+    <table class="text-center BookMarkTable ">
+        <thead>
+          <tr class="mb-3">
+            <th class="text-capitalize text-success px-5">BookMark</th>
+            <th class="text-capitalize"><i class="fa-solid fa-eye text-primary text-xl px-5"></i></th>
+            <th class="text-capitalize"><i class="fa-solid fa-pen-to-square text-success text-xl px-5"></i></th>
+            <th class="text-capitalize"><i class="fa-solid fa-trash-can text-danger text-xl px-5"></i></th>
+           
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+         
+         
+        </tbody>
+        </table>
+</div>
+  </div>
+ 
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
